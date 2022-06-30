@@ -1,4 +1,5 @@
 import React from 'react';
+import './chartOfTheYear.scss';
 import {
     BarChart,
     Bar,
@@ -8,7 +9,6 @@ import {
     Tooltip,
     Legend
   } from "recharts";
-
 
   const data = [
     {
@@ -84,6 +84,7 @@ import {
       amt: 2181
     }
   ];
+  
   const monthTickFormatter = (tick) => {
     const date = new Date(tick);
   
@@ -110,13 +111,13 @@ import {
     }
     return null;
   };
-  
-const Chart = () => {
+
+const ChartOfTheYear = () => {
   return (
-    <div className='chart'>
+    <div>
         <BarChart
-      width={500}
-      height={300}
+      width={1100}
+      height={500}
       data={data}
       margin={{
         top: 5,
@@ -147,4 +148,4 @@ const Chart = () => {
   )
 }
 
-export default Chart
+export default ChartOfTheYear

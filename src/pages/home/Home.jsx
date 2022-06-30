@@ -2,7 +2,11 @@ import React from 'react';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 import './home.scss';
-import Chart from '../../components/chart/Chart';
+import ChartOfTheYear from '../../components/ChartOfTheYear/ChartOfTheYear';
+import DailyChart from '../../components/DailyChart/DailyChart';
+import DolarBlue from '../../components/DolarBlue/DolarBlue';
+// import Test from '../../components/Test/Test';
+
 
 const Home = () => {
   return (
@@ -11,7 +15,10 @@ const Home = () => {
         <div className="homeContainer">
           <Navbar />
           home container
-          <Chart />
+          <ChartOfTheYear />
+          <DailyChart />
+          <DolarBlue />
+          {/* <Test /> */}
         </div>
     </div>
   )
